@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet');
+body {
+  margin: 0px 100px;
+  font-family: 'Oswald', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.firstView div {
+  width: 518px;
+  height: 328px;
+  margin: 0px 100px;
+}
+
+.firstView div h1 {
+  font-size: 54px;
+}
+
+.firstView button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  background-color: #1930DB;
+  border-radius: 10PX;
+  border-color: #1930DB;
+  width: 184px;
+  height: 60px;
+  margin: 0px 100px;
+}
+/*# sourceMappingURL=firstView.css.map */

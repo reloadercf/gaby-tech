@@ -1,0 +1,23 @@
+@import './stylesMain.scss';
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: $firstAzul;
+    display: flex;
+    align-items: center;
+    ul{
+        margin: 0px;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    a{
+        color: $neutralWhite;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px 15px; 
+        text-align: end;
+    }
+}
+
