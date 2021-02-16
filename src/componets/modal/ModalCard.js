@@ -7,16 +7,19 @@ export const ModalCard = ({estado,show, handleClose}) => {
 
     return (
         <div>
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} className="modalContent">
                 <Modal.Header closeButton>
-                <Modal.Title>{estado.name}</Modal.Title>
+                    <Modal.Title>{estado.name}</Modal.Title>
                 </Modal.Header>
+
                 <Modal.Body>
-                   {estado.description} ...!!!
+                   {estado.img}
+                   {estado.description}
                 </Modal.Body>
+
                 <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
-                    Close
+                    Comprar
                 </Button>
                 </Modal.Footer>
             </Modal>

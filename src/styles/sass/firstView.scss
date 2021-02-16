@@ -1,15 +1,24 @@
 @import './stylesMain.scss';
 
 .firstView{
+    background-image: url('../../assets/principal.jpeg');
+    min-height: 500px;
+    margin: 0px;
+}
 
-    div{
-        width: 518px;
-        height: 328px;
-        margin: 0px 100px;
-        h1{
-            font-size: 54px;
-        }
-    }
+.description{
+    width: 600px;
+    height: 328px;
+    margin: 0px 100px;
+    padding: 40px 0px;
+    h1{
+        font-size: 54px;
+    } 
+}
+
+.btnAction{
+    display: flex;
+    justify-content: flex-end;
     button{
         display: flex;
         align-items: center;
@@ -21,5 +30,16 @@
         width: 184px;
         height: 60px;
         margin: 0px 100px;
+    }
+}
+
+.line{
+    max-height: 30px;
+    background-color: $firstMagenta;
+    display: flex;
+    justify-content: flex-end;
+    img{
+        
+
     }
 }

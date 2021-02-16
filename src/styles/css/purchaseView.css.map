@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,yGAAI;AAEZ,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,SAAS;EACjB,WAAW,EAAE,+BAA+B;EAC5C,sBAAsB,EAAE,sBAAsB;EAC9C,uBAAuB,EAAE,oBAAoB;CAChD;;ADLD,AAAA,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,QAAQ;CACnB",
+    "sources": [
+        "../sass/purchaseView.scss",
+        "../sass/stylesMain.scss"
+    ],
+    "names": [],
+    "file": "purchaseView.css"
+}

@@ -4,13 +4,15 @@ import logo from './logo.svg';
 import { MapaMex } from './componets/mapa/MapaMex';
 import Navbar from './componets/common/Navbar';
 import FirstView from './componets/firstView/FirstView';
+import PurchaseView from './componets/purchase/PurchaseView';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <FirstView />
-      <MapaMex />        
+      <MapaMex />    
+      <PurchaseView />    
     </div>
   );
 }

@@ -6,17 +6,33 @@ body {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-.firstView div {
-  width: 518px;
-  height: 328px;
-  margin: 0px 100px;
+.firstView {
+  background-image: url("../../assets/principal.jpeg");
+  min-height: 500px;
+  margin: 0px;
 }
 
-.firstView div h1 {
+.description {
+  width: 600px;
+  height: 328px;
+  margin: 0px 100px;
+  padding: 40px 0px;
+}
+
+.description h1 {
   font-size: 54px;
 }
 
-.firstView button {
+.btnAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btnAction button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,5 +49,16 @@ body {
   width: 184px;
   height: 60px;
   margin: 0px 100px;
+}
+
+.line {
+  max-height: 30px;
+  background-color: #BA1863;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=firstView.css.map */

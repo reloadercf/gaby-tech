@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,yGAAI;AAEZ,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,SAAS;EACjB,WAAW,EAAE,+BAA+B;EAC5C,sBAAsB,EAAE,sBAAsB;EAC9C,uBAAuB,EAAE,oBAAoB;CAChD;;ADLD,AAAA,aAAa,CAAA;EACT,KAAK,EAAE,cAAc;CACxB",
+    "sources": [
+        "../sass/modal.scss",
+        "../sass/stylesMain.scss"
+    ],
+    "names": [],
+    "file": "modal.css"
+}
