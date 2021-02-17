@@ -1,5 +1,44 @@
 @import './stylesMain.scss';
 
-.modalContent{
-    width: 80% !important;
+.modal-dialog{
+    width: 280px !important;
+    min-width: 280px !important;
+    height: 180px !important;
+    min-height: 180px !important;
+}
+
+.modalBody {
+    padding: 0px !important;
+
+    img{
+        margin: 0px;
+        height: 180px;
+        width: 100%;
+        padding: 0px;
+    }
+    .title{
+        font-weight: bold;
+        color: $firstAzul;
+    }
+    p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        margin: 1rem;
+        text-align: justify;
+        
+    }
+    h5{
+        color: $firstMagenta !important;
+        margin: 1rem;
+    }
+}
+
+.modalFooter{
+
+    button{
+        background-color: none;
+
+    }
 }

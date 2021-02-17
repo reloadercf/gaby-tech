@@ -1,19 +1,35 @@
-import logo from './logo.svg';
-//import './App.css';
-//import { GraficaTest } from './componets/grafica/GraficaTest';
-import { MapaMex } from './componets/mapa/MapaMex';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './componets/home/Home';
+import Purchase from './componets/purchase/PurchaseView';
+import Footer from './componets/common/Footer';
 import Navbar from './componets/common/Navbar';
-import FirstView from './componets/firstView/FirstView';
-import PurchaseView from './componets/purchase/PurchaseView';
+import './App.css'
+
 
 function App() {
+  
   return (
+    <Router>
+
     <div className="App">
-      <Navbar />
-      <FirstView />
-      <MapaMex />    
-      <PurchaseView />    
+      <Navbar />   
+        <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/purchase">
+              <Purchase />
+            </Route>
+        </Switch>
+      <Footer />  
     </div>
+
+    </Router>
   );
 }
 

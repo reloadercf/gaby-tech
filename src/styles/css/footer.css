@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet');
+body {
+  margin: 0px 100px;
+  font-family: 'Oswald', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.footerSection {
+  height: 200px;
+  background-color: #1930DB;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -14,7 +14,9 @@
 .highcharts-legend {
   display: none !important;
 }
-
+.highcharts-title{
+  display: none !important;
+}
 #container {
     height: 500px; 
     min-width: 310px; 

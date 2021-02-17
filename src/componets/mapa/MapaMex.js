@@ -6,12 +6,14 @@ import HighchartsReact from "highcharts-react-official";
 import mapDataMexico from "../../data/mx-all";
 import dataEdosMexico from "../../data/data-mapa";
 import { ModalCard } from '../modal/ModalCard';
+import ReactLoading from 'react-loading';
 
 // Load Highcharts modules
 require('highcharts/modules/map')(Highcharts);
 
 export const MapaMex = () => {
     const [show, setShow] = useState(false);
+    const [load, setLoad] = useState(true);
     const [estado, setEstado] = useState({});
 
     const handleClose = () => setShow(false);
@@ -30,7 +32,10 @@ export const MapaMex = () => {
     }
 
     useEffect(()=>{
-        getData();
+       if(load) {
+            getData();
+            setLoad(false)
+       }
     },[]);
 
     const mapOptions = {
@@ -51,7 +56,7 @@ export const MapaMex = () => {
                         series: [{
                             data: this.series[0].data
                         }]
-                        })
+                    })
                 }
             }
         },
@@ -115,16 +120,24 @@ export const MapaMex = () => {
 
     return (
         <div>
-            <HighchartsReact
-                options={mapOptions}
-                constructorType={'mapChart'}
-                highcharts={Highcharts}
-            />
+            {
+                !load && 
+                < HighchartsReact
+                    options={mapOptions}
+                    constructorType={'mapChart'}
+                    highcharts={Highcharts}
+                />
+            }
+            {
+                load &&  <ReactLoading height={'20%'} width={'20%'} color={'blue'}></ReactLoading>
+            }
             <ModalCard
                 handleClose = {handleClose}
                 show = {show}
                 estado = {estado}
              ></ModalCard>
+             
         </div>
     )
 }
+

@@ -6,7 +6,44 @@ body {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-.modalContent {
-  width: 80% !important;
+.modal-dialog {
+  width: 280px !important;
+  min-width: 280px !important;
+  height: 180px !important;
+  min-height: 180px !important;
+}
+
+.modalBody {
+  padding: 0px !important;
+}
+
+.modalBody img {
+  margin: 0px;
+  height: 180px;
+  width: 100%;
+  padding: 0px;
+}
+
+.modalBody .title {
+  font-weight: bold;
+  color: #1930DB;
+}
+
+.modalBody p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 1rem;
+  text-align: justify;
+}
+
+.modalBody h5 {
+  color: #BA1863 !important;
+  margin: 1rem;
+}
+
+.modalFooter button {
+  background-color: none;
 }
 /*# sourceMappingURL=modal.css.map */

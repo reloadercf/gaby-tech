@@ -1,4 +1,10 @@
 import React from 'react'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -7,8 +13,12 @@ const Navbar = () => {
             <img src="" alt=""/>
             <nav className="menu">
                 <ul>
-                    <li><a href="#home">Proyectos</a></li>
-                    <li><a href="#compra">Compra Bonos</a></li>
+                    <li>
+                        <Link to="/">Proyectos</Link>
+                    </li>
+                    <li>
+                        <Link to="/purchase">Comprar Bonos</Link>
+                    </li>
                     <li><a href="#validacion">Validación</a></li>
                 </ul>
             </nav>
