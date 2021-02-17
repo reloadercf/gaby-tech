@@ -6,11 +6,12 @@ import {
     Link
   } from "react-router-dom";
 
+import logo from '../../assets/logoTotoro.png'
 const Navbar = () => {
     return (
         <>
         <div className="navbar">
-            <img src="" alt=""/>
+            <img src={logo} alt=""/>
             <nav className="menu">
                 <ul>
                     <li>
